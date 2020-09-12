@@ -1,0 +1,25 @@
+version: "3.5"
+
+services:
+
+  influxdb:
+    image: influxdb
+    container_name: influxdb
+    ports:
+      - "8086:8086"
+    volumes:
+      - ./influxdb-data:/var/lib/influxdb
+    environment:
+      INFLUXDB_DB: glances
+
+  glances:
+    image: nicolargo/glances
+    restart: always
+    pid: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./glances.conf:/home/glances.conf
+    environment:
+      - "GLANCES_OPT=--quiet --config /home/glances.conf --export influxdb"
+    depends_on:
+      - influxdb
