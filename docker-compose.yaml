@@ -13,13 +13,13 @@ services:
       INFLUXDB_DB: glances
 
   glances:
-    image: nicolargo/glances
+    image: nicolargo/glances:v2.11.1
     restart: always
     pid: host
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./glances.conf:/home/glances.conf
     environment:
-      - "GLANCES_OPT=--quiet --config /home/glances.conf --export influxdb"
+      - "GLANCES_OPT=--quiet --config /home/glances.conf --export-influxdb"
     depends_on:
       - influxdb
