@@ -16,13 +16,13 @@
   "editable": true,
   "gnetId": 2387,
   "graphTooltip": 0,
-  "id": 66,
-  "iteration": 1599918494724,
+  "id": 77,
+  "iteration": 1600071226304,
   "links": [],
   "panels": [
     {
       "cacheTimeout": null,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "gridPos": {
         "h": 6,
         "w": 6,
@@ -109,7 +109,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "gridPos": {
         "h": 6,
         "w": 6,
@@ -198,7 +198,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "gridPos": {
         "h": 6,
         "w": 6,
@@ -288,7 +288,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "gridPos": {
         "h": 6,
         "w": 6,
@@ -379,7 +379,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -602,7 +602,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "gridPos": {
         "h": 8,
         "w": 3,
@@ -746,7 +746,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "editable": true,
       "error": false,
       "fill": 1,
@@ -1010,7 +1010,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "editable": true,
       "error": false,
       "fill": 2,
@@ -1145,7 +1145,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "editable": true,
       "error": false,
       "fill": 2,
@@ -1308,7 +1308,7 @@
       "cacheTimeout": null,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -1446,7 +1446,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "editable": true,
       "error": false,
       "fill": 0,
@@ -1561,7 +1561,7 @@
             [
               {
                 "params": [
-                  "/.size"
+                  "/etc/hostname.size"
                 ],
                 "type": "field"
               },
@@ -1620,7 +1620,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "editable": true,
       "error": false,
       "fill": 0,
@@ -1786,7 +1786,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "PTTEP: PROD - MinIO",
       "editable": true,
       "error": false,
       "fill": 2,
@@ -2271,10 +2271,10 @@
     "type": "timepicker"
   },
   "timezone": "browser",
-  "title": "Payment Plus: UAT - Internal",
-  "uid": "payment-plus-uat-internal",
+  "title": "Payment Plus: PROD - MinIO",
+  "uid": "payment-plus-prod-minio",
   "variables": {
     "list": []
   },
-  "version": 10
+  "version": 2
 }
