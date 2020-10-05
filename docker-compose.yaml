@@ -3,8 +3,8 @@ version: "3.5"
 services:
 
   influxdb:
+    restart: always
     image: influxdb
-    container_name: influxdb
     ports:
       - "8086:8086"
     volumes:
