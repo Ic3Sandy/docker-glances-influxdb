@@ -10,7 +10,9 @@ services:
     volumes:
       - ./influxdb-data:/var/lib/influxdb
     environment:
-      INFLUXDB_DB: glances
+      - INFLUXDB_DB=glances
+      - INFLUXDB_RETENTION_ENABLED=true
+      - INFLUXDB_RETENTION_CHECK_INTERVAL=30m
 
   glances:
     image: nicolargo/glances:v2.11.1
