@@ -1,15 +1,16 @@
 # docker-glances-influxdb
 
-For export statistics from glances to an `InfluxDB` (It work on **Ubuntu 18.04 LTS**)
+- Install Glances [https://github.com/nicolargo/glances]
+- Start Glances through Systemd [https://github.com/nicolargo/glances/wiki/Start-Glances-through-Systemd]
 
-- Start Services
+Start InfluxDB
 
 ```bash
 docker-compose up -d
 ```
 
-- **Optional** for Standalone Mode
+Script for set systemd glances
 
 ```bash
-docker-compose exec glances glances
+./init-systemd-glances.sh
 ```
