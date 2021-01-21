@@ -2,7 +2,7 @@
   "annotations": {
     "list": [
       {
-        "$$hashKey": "object:134038",
+        "$$hashKey": "object:1949",
         "builtIn": 1,
         "datasource": "-- Grafana --",
         "enable": true,
@@ -16,13 +16,13 @@
   "editable": true,
   "gnetId": 2387,
   "graphTooltip": 0,
-  "id": 77,
-  "iteration": 1600071226304,
+  "id": 80,
+  "iteration": 1611210535028,
   "links": [],
   "panels": [
     {
       "cacheTimeout": null,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "gridPos": {
         "h": 6,
         "w": 6,
@@ -109,7 +109,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "gridPos": {
         "h": 6,
         "w": 6,
@@ -198,7 +198,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "gridPos": {
         "h": 6,
         "w": 6,
@@ -288,7 +288,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "gridPos": {
         "h": 6,
         "w": 6,
@@ -353,7 +353,7 @@
             [
               {
                 "params": [
-                  "/etc/hostname.percent"
+                  "/.percent"
                 ],
                 "type": "field"
               },
@@ -379,7 +379,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "fill": 1,
       "fillGradient": 0,
       "grid": {
@@ -602,7 +602,7 @@
     },
     {
       "cacheTimeout": null,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "gridPos": {
         "h": 8,
         "w": 3,
@@ -730,15 +730,12 @@
         "for": "5m",
         "frequency": "1m",
         "handler": 1,
-        "message": "CPU Internal UAT",
+        "message": "",
         "name": "CPU (%) alert",
         "noDataState": "no_data",
         "notifications": [
           {
             "uid": "R4oP3vuZk"
-          },
-          {
-            "uid": "Bv8yM7NGz"
           }
         ]
       },
@@ -746,7 +743,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "editable": true,
       "error": false,
       "fill": 1,
@@ -995,14 +992,10 @@
         "for": "5m",
         "frequency": "1m",
         "handler": 1,
-        "message": "Memory Internal UAT",
+        "message": "",
         "name": "MEMORY alert",
         "noDataState": "no_data",
-        "notifications": [
-          {
-            "uid": "Bv8yM7NGz"
-          }
-        ]
+        "notifications": []
       },
       "aliasColors": {
         "Max": "#BF1B00"
@@ -1010,7 +1003,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "editable": true,
       "error": false,
       "fill": 2,
@@ -1117,7 +1110,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:139",
           "format": "percent",
           "logBase": 1,
           "max": "100",
@@ -1125,7 +1117,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:140",
           "format": "short",
           "logBase": 1,
           "max": null,
@@ -1145,7 +1136,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "editable": true,
       "error": false,
       "fill": 2,
@@ -1294,21 +1285,17 @@
         "for": "5m",
         "frequency": "1m",
         "handler": 1,
-        "message": "Internal UAT",
+        "message": "",
         "name": "Disk used alert",
         "noDataState": "no_data",
-        "notifications": [
-          {
-            "uid": "Bv8yM7NGz"
-          }
-        ]
+        "notifications": []
       },
       "aliasColors": {},
       "bars": false,
       "cacheTimeout": null,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -1372,7 +1359,7 @@
             [
               {
                 "params": [
-                  "/etc/hostname.percent"
+                  "/.percent"
                 ],
                 "type": "field"
               },
@@ -1416,7 +1403,6 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:322",
           "format": "percent",
           "label": null,
           "logBase": 1,
@@ -1425,7 +1411,6 @@
           "show": true
         },
         {
-          "$$hashKey": "object:323",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -1446,7 +1431,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "editable": true,
       "error": false,
       "fill": 0,
@@ -1519,7 +1504,7 @@
             [
               {
                 "params": [
-                  "/etc/hostname.used"
+                  "/.used"
                 ],
                 "type": "field"
               },
@@ -1561,7 +1546,7 @@
             [
               {
                 "params": [
-                  "/etc/hostname.size"
+                  "/.size"
                 ],
                 "type": "field"
               },
@@ -1620,173 +1605,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: PROD - MinIO",
-      "editable": true,
-      "error": false,
-      "fill": 0,
-      "fillGradient": 0,
-      "grid": {},
-      "gridPos": {
-        "h": 7,
-        "w": 12,
-        "x": 0,
-        "y": 28
-      },
-      "hiddenSeries": false,
-      "id": 10,
-      "legend": {
-        "avg": true,
-        "current": false,
-        "max": true,
-        "min": true,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 2,
-      "links": [],
-      "nullPointMode": "null",
-      "options": {
-        "dataLinks": []
-      },
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "seriesOverrides": [
-        {
-          "alias": "Write"
-        }
-      ],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "alias": "Read",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "diskio",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "vda1.read_bytes"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [
-                  3
-                ],
-                "type": "top"
-              }
-            ]
-          ],
-          "tags": []
-        },
-        {
-          "alias": "Write",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "diskio",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "B",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "vda1.write_bytes"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [
-                  3
-                ],
-                "type": "top"
-              }
-            ]
-          ],
-          "tags": []
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeRegions": [],
-      "timeShift": null,
-      "title": "Disk IO",
-      "tooltip": {
-        "shared": false,
-        "sort": 0,
-        "value_type": "cumulative"
-      },
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "format": "bytes",
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        },
-        {
-          "format": "short",
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "PTTEP: PROD - MinIO",
+      "datasource": "DATASOURCE-NAME",
       "editable": true,
       "error": false,
       "fill": 2,
@@ -1795,7 +1614,7 @@
       "gridPos": {
         "h": 7,
         "w": 12,
-        "x": 12,
+        "x": 0,
         "y": 28
       },
       "hiddenSeries": false,
@@ -1957,14 +1776,14 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PTTEP: UAT - Internal",
+      "datasource": "DATASOURCE-NAME",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
-        "h": 8,
-        "w": 24,
-        "x": 0,
-        "y": 35
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 28
       },
       "hiddenSeries": false,
       "id": 25,
@@ -1996,7 +1815,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "alias": "django-admin",
+          "alias": "django",
           "groupBy": [
             {
               "params": [
@@ -2020,7 +1839,7 @@
             [
               {
                 "params": [
-                  "admin_django-admin_1.cpu_percent"
+                  "app_django_1.cputotal"
                 ],
                 "type": "field"
               },
@@ -2035,7 +1854,7 @@
           "tags": []
         },
         {
-          "alias": "django-admin-celery",
+          "alias": "postgres",
           "groupBy": [
             {
               "params": [
@@ -2059,7 +1878,7 @@
             [
               {
                 "params": [
-                  "admin_django-admin-celery_1.cpu_percent"
+                  "app_postgres_1.cputotal"
                 ],
                 "type": "field"
               },
@@ -2130,7 +1949,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "PTTEP: UAT - Internal",
+        "datasource": "DATASOURCE-NAME",
         "definition": "",
         "hide": 0,
         "includeAll": false,
@@ -2157,7 +1976,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "PTTEP: UAT - Internal",
+        "datasource": "DATASOURCE-NAME",
         "definition": "",
         "hide": 0,
         "includeAll": true,
@@ -2185,7 +2004,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "PTTEP: UAT - Internal",
+        "datasource": "DATASOURCE-NAME",
         "definition": "",
         "hide": 0,
         "includeAll": false,
@@ -2213,7 +2032,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "PTTEP: UAT - Internal",
+        "datasource": "DATASOURCE-NAME",
         "definition": "",
         "hide": 0,
         "includeAll": false,
@@ -2271,10 +2090,10 @@
     "type": "timepicker"
   },
   "timezone": "browser",
-  "title": "Payment Plus: PROD - MinIO",
-  "uid": "payment-plus-prod-minio",
+  "title": "Title",
+  "uid": "UID",
   "variables": {
     "list": []
   },
-  "version": 2
+  "version": 8
 }

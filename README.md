@@ -18,3 +18,9 @@ Script for set systemd glances
 ```bash
 ./init-systemd-glances.sh
 ```
+
+Update Template
+
+```json
+"datasource": "DATASOURCE-NAME",
+```
