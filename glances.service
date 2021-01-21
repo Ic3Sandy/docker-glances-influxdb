@@ -3,7 +3,7 @@ Description=Glances
 After=network.target influxd.service
 
 [Service]
-ExecStart=/usr/bin/glances --quiet --export influxdb --config /root/docker-glances-influxdb/glances.conf
+ExecStart=/usr/local/bin/glances --quiet --export influxdb --config /root/docker-glances-influxdb/glances.conf
 Restart=on-failure
 RemainAfterExit=yes
 RestartSec=30s
